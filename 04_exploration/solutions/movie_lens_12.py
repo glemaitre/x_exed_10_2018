@@ -1,0 +1,1 @@
+data.groupby('movie_id').mean()['rating'].hist();

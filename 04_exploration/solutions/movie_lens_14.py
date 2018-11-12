@@ -1,0 +1,1 @@
+popular_movie_mask = data.groupby('movie_id').count()['rating'] > 30

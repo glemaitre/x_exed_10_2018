@@ -1,0 +1,2 @@
+popular_movie_mask = data.groupby('movie_id').count()['rating'] > 100
+data.set_index('movie_id')[popular_movie_mask].groupby(['movie_id', 'gender']).mean()['rating'].unstack().plot(x='F', y='M', kind='scatter')

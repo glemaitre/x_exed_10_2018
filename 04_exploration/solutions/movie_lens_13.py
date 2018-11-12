@@ -1,0 +1,1 @@
+data.groupby(['gender', 'movie_id']).mean().groupby('gender')['rating'].hist(bins=15, alpha=0.3);

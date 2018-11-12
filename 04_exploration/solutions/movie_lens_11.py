@@ -1,0 +1,1 @@
+data.groupby('movie_id').count()['rating'].hist(bins=10);

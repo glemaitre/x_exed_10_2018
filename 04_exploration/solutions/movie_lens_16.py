@@ -1,0 +1,1 @@
+data.groupby(['movie_id', 'gender']).mean()['rating'].unstack().plot(x='F', y='M', kind='scatter')

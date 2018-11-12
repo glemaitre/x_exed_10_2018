@@ -1,0 +1,2 @@
+data.set_index('movie_id')[popular_movie_mask].groupby('movie_id').mean()['rating'].plot(kind='kde');
+data.set_index('movie_id')[~popular_movie_mask].groupby('movie_id').mean()['rating'].plot(kind='kde');
